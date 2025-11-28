@@ -131,7 +131,7 @@ GameObject:
   - component: {fileID: 283819576}
   - component: {fileID: 283819575}
   m_Layer: 0
-  m_Name: Square
+  m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -356,7 +356,7 @@ GameObject:
   - component: {fileID: 1259375873}
   - component: {fileID: 1259375872}
   m_Layer: 0
-  m_Name: Triangle
+  m_Name: SpeedBoost
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -443,7 +443,7 @@ GameObject:
   - component: {fileID: 1718761433}
   - component: {fileID: 1718761432}
   m_Layer: 0
-  m_Name: Ground
+  m_Name: ShieldPowerUp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
