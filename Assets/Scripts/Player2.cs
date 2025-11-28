@@ -3,7 +3,7 @@ using UnityEngine;
 public class Player2 : MonoBehaviour
 {
     // public Fields
-    private float moveSpeed = 5f;
+    private float moveSpeed = 5f;  // ค่า speed การเคลื่อนที่พื้นฐาน
     private float jumpForce = 10f; // ค่ากระโดดพื้นฐาน
 
     private Rigidbody2D rb;
@@ -15,7 +15,7 @@ public class Player2 : MonoBehaviour
 
     void Update()
     {
-        // 1. Movement (left-right using A/D/arraw keys)
+        // 1. Movement (left-right using A/D/arrow keys)
         float moveInput = Input.GetAxisRaw("Horizontal");
         // move left-right based on MoveSpeed
         rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);

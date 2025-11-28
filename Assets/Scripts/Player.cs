@@ -34,15 +34,15 @@ public class Player : MonoBehaviour
     // 3. Collection Logic (OnTriggerEnter2D)
     private void OnTriggerEnter2D(Collider2D other)
     {
-/*        PowerUpBase item = other.GetComponent<PowerUpBase>();
+        PowerUpBase item = other.GetComponent<PowerUpBase>();
         if (item != null)
         {
             // Polymorphism: เรียก Apply ผ่าน Abstract Class Reference
-            item.Apply(this);
+            item.ApplyEffect(this);
 
             // ทำลายไอเทม (Requirement C)
             Destroy(other.gameObject);
-        }*/
+        }
     }
 
     // 4. Encapsulation Control (Public Setters for Items)
