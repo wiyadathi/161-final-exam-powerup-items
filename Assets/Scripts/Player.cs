@@ -3,9 +3,9 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     // Encapsulation: Private Backing Field
-    private float _moveSpeed = 5f;
-    private bool _isInvulnerable = false;
-    private float _jumpForce = 10f; // ค่ากระโดดพื้นฐาน
+    [field: SerializeField] private float _moveSpeed = 5f;
+    [field: SerializeField] private bool _isInvulnerable = false;
+     private float _jumpForce = 10f; // ค่ากระโดดพื้นฐาน
 
     private Rigidbody2D rb;
 
@@ -23,6 +23,7 @@ public class Player : MonoBehaviour
         // 1. Movement
         float moveInput = Input.GetAxisRaw("Horizontal");
         rb.linearVelocity = new Vector2(moveInput * MoveSpeed, rb.linearVelocity.y);
+        Debug.Log($"Basic Speed: {MoveSpeed}");
 
         // 2. Jump (No Ground Check Required)
         if (Input.GetKeyDown(KeyCode.Space))
