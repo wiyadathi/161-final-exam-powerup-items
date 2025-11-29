@@ -2,15 +2,13 @@ using UnityEngine;
 
 public class SpeedBoost : PowerUpBase
 {
-    private float newSpeed = 10f;
-
     // Polymorphism: Implement ตรรกะเฉพาะตัว
     public override void ApplyEffect(Player player)
     {
         // ใช้งาน Property ที่สืบทอดมา
         if (!IsEffectActive)
         {
-            player.SetMoveSpeed(newSpeed);
+            player.SetMoveSpeed(player.MoveSpeed * 2);
             IsEffectActive = true; // กำหนดสถานะใช้ Protected Setter
         }
     }
